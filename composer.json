@@ -1,0 +1,33 @@
+{
+    "name": "likeplatform/ai",
+    "description": "Portal de IA para LikePlatform — Wrapper sobre Laravel AI SDK",
+    "type": "library",
+    "license": "MIT",
+    "version": "0.1.0-dev",
+    "require": {
+        "php": "^8.4",
+        "likeplatform/contracts": "^0.1.0"
+    },
+    "require-dev": {
+        "pestphp/pest": "^4.0",
+        "orchestra/testbench": "^10.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "LikePlatform\\AI\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "LikePlatform\\AI\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LikePlatform\\AI\\Providers\\AIServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable"
+}
