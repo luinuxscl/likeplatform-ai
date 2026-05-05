@@ -5,13 +5,11 @@ declare(strict_types=1);
 namespace LikePlatform\AI\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use LikePlatform\AI\Contracts\AIProvider;
+use LikePlatform\AI\Contracts\AIUsageTracker;
+use LikePlatform\Contracts\AI\AIProviderContract;
+use LikePlatform\Contracts\AI\AIUsageTrackerContract;
 
-/**
- * Service provider for the LikePlatform AI package.
- *
- * Wraps Laravel 13's native AI SDK to provide LikePlatform-specific
- * features: prompt templates, usage tracking, and cost reporting.
- */
 class AIServiceProvider extends ServiceProvider
 {
     public function register(): void
@@ -19,6 +17,9 @@ class AIServiceProvider extends ServiceProvider
         $this->mergeConfigFrom(
             __DIR__.'/../../config/ai.php', 'likeplatform-ai'
         );
+
+        $this->app->singleton(AIProviderContract::class, AIProvider::class);
+        $this->app->singleton(AIUsageTrackerContract::class, AIUsageTracker::class);
     }
 
     public function boot(): void
