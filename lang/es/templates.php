@@ -23,4 +23,12 @@ return [
     'created_successfully' => 'Plantilla creada exitosamente.',
     'updated_successfully' => 'Plantilla actualizada exitosamente.',
     'deleted_successfully' => 'Plantilla eliminada exitosamente.',
+    'playground' => 'Playground IA',
+    'playground_empty' => 'Inicia una conversacion escribiendo un mensaje abajo.',
+    'playground_placeholder' => 'Escribe tu mensaje aqui...',
+    'send' => 'Enviar',
+    'clear_history' => 'Limpiar historial',
+    'system_prompt' => 'Prompt del Sistema',
+    'system_prompt_placeholder' => 'Eres un asistente util...',
+    'optional' => 'opcional',
 ];

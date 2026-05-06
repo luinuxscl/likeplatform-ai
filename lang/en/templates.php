@@ -23,4 +23,12 @@ return [
     'created_successfully' => 'Template created successfully.',
     'updated_successfully' => 'Template updated successfully.',
     'deleted_successfully' => 'Template deleted successfully.',
+    'playground' => 'AI Playground',
+    'playground_empty' => 'Start a conversation by typing a message below.',
+    'playground_placeholder' => 'Type your message here...',
+    'send' => 'Send',
+    'clear_history' => 'Clear history',
+    'system_prompt' => 'System Prompt',
+    'system_prompt_placeholder' => 'You are a helpful assistant...',
+    'optional' => 'optional',
 ];

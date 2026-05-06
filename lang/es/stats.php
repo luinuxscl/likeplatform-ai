@@ -19,4 +19,5 @@ return [
     'tokens' => 'Tokens',
     'cost' => 'Costo',
     'date' => 'Fecha',
+    'rate_limit_exceeded' => 'Limite de solicitudes excedido. Maximo :max solicitudes por :minutes minuto(s).',
 ];

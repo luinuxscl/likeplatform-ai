@@ -19,4 +19,5 @@ return [
     'tokens' => 'Tokens',
     'cost' => 'Cost',
     'date' => 'Date',
+    'rate_limit_exceeded' => 'Rate limit exceeded. Maximum :max requests per :minutes minute(s).',
 ];
