@@ -26,6 +26,7 @@ class AIServiceProvider extends ServiceProvider
     {
         $this->loadRoutesFrom(__DIR__.'/../../routes/ai.php');
         $this->loadMigrationsFrom(__DIR__.'/../../database/migrations');
+        $this->loadViewsFrom(__DIR__.'/../../resources/views', 'likeplatform-ai');
         $this->loadTranslationsFrom(__DIR__.'/../../lang', 'likeplatform-ai');
 
         if ($this->app->runningInConsole()) {
